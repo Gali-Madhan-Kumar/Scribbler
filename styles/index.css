@@ -5,3 +5,22 @@ body {
     background-size: cover;
     background-attachment: fixed;
 }
+.middle_btns {
+    width: auto;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.middle_btns > button {
+    width: 100px;
+    padding: 10px;
+    margin: 10px;
+    background-color: yellow;
+}
