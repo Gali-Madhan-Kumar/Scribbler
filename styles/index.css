@@ -25,3 +25,29 @@ body {
     background-color: yellow;
     cursor: pointer;
 }
+#createpost_modal {
+    justify-content: center;
+    align-items: center;
+}
+.modal_content {
+    display: flex;
+    flex-direction: column;
+    background-color: #fefefe;
+    width: 80%;
+}
+form textarea {
+    padding: 10px;
+    margin: 0px 15px;
+    background-color: rgb(232, 232, 232);
+    border: 0px;
+}
+.createpost_submit_btn {
+    text-align: center;
+    margin: 20px auto;
+    width: 100px;
+    padding: 10px;
+    background-color: green;
+    opacity: 0.75;
+    border: 0px;
+    color: white;
+}

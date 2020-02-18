@@ -23,7 +23,7 @@
     </div>
     <div class="middle_btns">
         <button id="allposts">All Posts</button>
-        <button id="createpost">Create Post</button>
+        <button id="createpost" onclick="createpostModal('createpost_modal')">Create Post</button>
     </div>
     <div id="signup_modal" class="modal">
         <div class="modal-content">
@@ -63,7 +63,10 @@
                 </form>
             </div>
         </div>
+    </div>
+        <div id="createpost_modal" class="modal"></div>
         <script src="./scripts/common.js"></script>
+        <script src="./scripts/index.js"></script>
 </body>
 
 </html>
