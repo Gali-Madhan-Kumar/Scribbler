@@ -47,7 +47,6 @@ form textarea {
     width: 100px;
     padding: 10px;
     background-color: green;
-    opacity: 0.75;
-    border: 0px;
     color: white;
+    cursor: pointer;
 }
