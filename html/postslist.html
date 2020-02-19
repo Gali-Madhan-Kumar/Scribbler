@@ -2,13 +2,26 @@
 <html>
 
 <head>
-    <!-- TODO: Include Font Awesome file here -->
-    <!-- TODO: Include Google Fonts file here -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/common.css">
 </head>
 
 <body>
-    <!-- TODO: Include code for header here -->
-
+    <div id="header">
+        <div class="logo">
+            <h1 id="title">ScriBBler</h1>
+            <h4 id="sub_title">Explore, Imagine, Create</h4>
+        </div>
+        <div class="header_buttons">
+            <button id="signup_btn" onclick="modal('signup_modal')">Sign Up</button>
+            <button id="signin_btn" onclick="modal('signin_modal')">Sign In</button>
+        </div>
+    </div>
+    <div id="signup_modal" class="modal"></div>
+    <div id="signin_modal" class="modal"></div>
     <!-- ATTENTION: The HTML code for the list of posts has been given to you. You can feel free to add/delete/modify this code. You need to write the proper CSS and JavaScript code corresponding to this page so that the result looks like the screenshots given to you in the Project Statement. -->
 
     <!-- list of all posts starts here -->
@@ -125,6 +138,7 @@
 
     </div>
     <!-- list of all posts ends here -->
+    <script src="../scripts/common.js"></script>
 </body>
 
 </html>
