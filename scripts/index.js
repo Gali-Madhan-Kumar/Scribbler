@@ -23,3 +23,7 @@ function createpostModal(modalId) {
 function closeModal(modalId) {
     document.getElementById(modalId.id).style.display = 'none';
 }
+
+function allPosts() {
+    window.location.href = './html/postslist.html';
+}
