@@ -67,3 +67,32 @@ body {
     cursor: pointer;
     margin: 5px;
 }
+.modal_content {
+    background-color: #fefefe;
+    margin: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+.modal_body p {
+    padding: 20px;
+    margin: 0px;
+    font-size: 1.2em;
+}
+#yes_btn {
+    width: 80px;
+    padding: 10px;
+    margin: 20px;
+    color: white;
+    background-color: green;
+    border: 0px;
+}
+#no_btn {
+    width: 80px;
+    padding: 10px;
+    margin: 20px;
+    float: right;
+    color: white;
+    background-color: red;
+    border: 0px;
+}

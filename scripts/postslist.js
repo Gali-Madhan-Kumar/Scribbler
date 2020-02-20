@@ -29,24 +29,36 @@ var postsList = [{
 function showposts(postsList) {
     postsList.forEach(function (value, index) {
         var post_Id = 'postcard_' + (index + 1);
-            var template = '<div class="postcard" id=' + post_Id + '>' +
-                '<div class="username">' +
-                '<p>' + value.user_name + '</p>' +
-                '</div>' +
-                '<div class="postdetails">' +
-                '<div class="post_header">' +
-                '<p class="post_title">' + value.post_title + '</p>' +
-                '<span>' +
-                '<i class="fa fa-trash" aria-hidden="true"></i>' +
-                '</span>' +
-                '</div>' +
-                '<p class="post_content">' + value.post_content + '</p>' +
-                '<span>' +
-                '<i class="fa fa-ellipsis-h" aria-hidden="true"></i>' +
-                '</span>' +
-                '</div>' +
-                '</div>' 
-                document.getElementsByClassName('postslist')[0].innerHTML += template;
+        var template = '<div class="postcard" id=' + post_Id + '>' +
+            '<div class="username">' +
+            '<p>' + value.user_name + '</p>' +
+            '</div>' +
+            '<div class="postdetails">' +
+            '<div class="post_header">' +
+            '<p class="post_title">' + value.post_title + '</p>' +
+            '<span>' +
+            '<i class="fa fa-trash" onclick="deletemodal(deletepost_modal)" aria-hidden="true"></i>' +
+            '</span>' +
+            '</div>' +
+            '<p class="post_content">' + value.post_content + '</p>' +
+            '<span>' +
+            '<i class="fa fa-ellipsis-h" aria-hidden="true"></i>' +
+            '</span>' +
+            '</div>' +
+            '</div>'
+        document.getElementsByClassName('postslist')[0].innerHTML += template;
     });
 }
 showposts(postsList);
+
+function deletemodal(modalName) {
+    document.getElementById(modalName.id).style.display = 'flex';
+    var template = '<div class="modal_content">' +
+        '<div class="modal_body">' +
+        '<p id="deletepost_title">Are you sure you want to delete this post?</p>' +
+        '<button id="yes_btn">Yes</button>' +
+        '<button id="no_btn" onclick="closeModal(' + modalName.id + ')">No</button>' +
+        '</div>' +
+        '</div>'
+    document.getElementById(modalName.id).innerHTML = template;
+}
