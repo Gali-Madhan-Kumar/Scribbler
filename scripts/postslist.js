@@ -37,7 +37,7 @@ function showposts(postsList) {
             '<div class="post_header">' +
             '<p class="post_title">' + value.post_title + '</p>' +
             '<span>' +
-            '<i class="fa fa-trash" onclick="deletemodal(deletepost_modal)" aria-hidden="true"></i>' +
+            '<i class="fa fa-trash" onclick="deletemodal(deletepost_modal, ' + post_Id + ')" aria-hidden="true"></i>' +
             '</span>' +
             '</div>' +
             '<p class="post_content">' + value.post_content + '</p>' +
@@ -51,14 +51,19 @@ function showposts(postsList) {
 }
 showposts(postsList);
 
-function deletemodal(modalName) {
+function deletemodal(modalName, postId) {
     document.getElementById(modalName.id).style.display = 'flex';
     var template = '<div class="modal_content">' +
         '<div class="modal_body">' +
         '<p id="deletepost_title">Are you sure you want to delete this post?</p>' +
-        '<button id="yes_btn">Yes</button>' +
+        '<button id="yes_btn" onclick="deletepost(' + modalName.id + ', ' + postId.id + ')">Yes</button>' +
         '<button id="no_btn" onclick="closeModal(' + modalName.id + ')">No</button>' +
         '</div>' +
         '</div>'
     document.getElementById(modalName.id).innerHTML = template;
+}
+
+function deletepost(modalId, postId) {
+    document.getElementById(postId.id).style.display = 'none';
+    document.getElementById(modalId.id).style.display = 'none';
 }
