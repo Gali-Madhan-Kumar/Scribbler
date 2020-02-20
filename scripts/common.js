@@ -15,7 +15,7 @@ function modal(modalId) {
                 '<label for="Password">Password</label>' +
                 '<input type="password" placeholder="Enter your password" required id="Password" />' +
                 '<label for="Confirm-Password">Confirm Password</label>' +
-                '<input type="password" placeholder="Re-nter your password" required id="Confirm-Password" />' +
+                '<input type="password" placeholder="Re-enter your password" required id="Confirm-Password" />' +
                 '<button class="signup_submit_btn">Sign Up</button>' +
             '</form>'+
         '</div>' +
