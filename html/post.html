@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../styles/common.css">
     <link rel="stylesheet" href="../styles/post.css">
 </head>
+
 <body>
     <div id="header">
         <div class="logo">
@@ -28,8 +29,15 @@
     <div id="signin_modal" class="modal"></div>
     <div id="post"></div>
     <div id="likepost"></div>
+    <div id="comment_box">
+        <textarea placeholder="Leave a comment..."></textarea>
+        <button id="comment_btn" onclick="addComment()">Comment</button>
+    </div>
+    <h3>All Comments</h3>
+    <div id="allcomments"></div>
 
     <script src="../scripts/common.js"></script>
     <script src="../scripts/post.js"></script>
 </body>
+
 </html>

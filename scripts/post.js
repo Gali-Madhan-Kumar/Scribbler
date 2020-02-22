@@ -51,3 +51,8 @@ function like() {
 	}
 	document.getElementsByClassName('fa-thumbs-up')[0].innerHTML = ' Liked';
 }
+function addComment() {
+	var comment = document.getElementsByTagName('textarea')[0].value;
+	document.getElementById('allcomments').innerHTML = '<p>' + comment + '</p>' + document.getElementById('allcomments').innerHTML;
+	document.getElementsByTagName('textarea')[0].value = '';
+}

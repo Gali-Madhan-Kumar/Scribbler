@@ -53,3 +53,41 @@ span {
 #likepost p {
     color: #9B9A94;
 }
+#comment_box {
+    display: flex;
+    flex-direction: column;
+}
+textarea {
+    width: 70%;
+    min-height: 70px;
+    margin: 20px;
+    margin-top: 0px;
+}
+textarea:focus {
+    outline: none;
+}
+#comment_btn {
+    padding: 10px;
+    margin: 20px;
+    margin-top: 0px;
+    background-color: red;
+    border: none;
+    color: white;
+    font-weight: 600;
+    width: 90px;
+}
+h3 {
+    margin: 5px 20px;
+}
+#allcomments {
+    width: 70%;
+    margin: 15px 20px;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+}
+#allcomments p {
+    margin: 10px;
+    background-color: white;
+    padding: 20px;
+}
