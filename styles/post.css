@@ -1,29 +1,30 @@
 body {
-	margin: 0px;
+    margin: 0px;
 }
+/* post css starts here */
 #postTitle {
-	display: flex;
-	font-size: 20px;
+    display: flex;
+    font-size: 20px;
     justify-content: center;
     font-family: 'Cairo', sans-serif;
     margin: 0px 20px;
 }
 #postDetails {
-	margin: 0px 20px;
+    margin: 0px 20px;
 }
 #userName {
-	display: flex;
+    display: flex;
 }
 #userName p {
-	font-family: 'Alegreya', serif;
-	font-size: 20px;
-	flex: 1;
+    font-family: 'Alegreya', serif;
+    font-size: 20px;
+    flex: 1;
 }
 #postContent {
-	font-family: 'Frank Ruhl Libre', serif;
+    font-family: 'Frank Ruhl Libre', serif;
 }
 .fa-edit {
-	font-weight: bold;
+    font-weight: bold;
 }
 span {
     background-color: red;
@@ -35,9 +36,12 @@ span {
     cursor: pointer;
     display: block;
 }
+/* post css ends here */
+/* disables the blue color outline of posttitle and postcontent when user tries to edit content inside posttitle and postcontent*/
 [contenteditable] {
     outline: 0px solid transparent;
 }
+/* css for like button starts here */
 #likepost {
     margin: 20px;
     margin-bottom: 0px;
@@ -53,6 +57,8 @@ span {
 #likepost p {
     color: #9B9A94;
 }
+/* css for like button ends here */
+/* css for comment box starts here */
 #comment_box {
     display: flex;
     flex-direction: column;
@@ -63,6 +69,7 @@ textarea {
     margin: 20px;
     margin-top: 0px;
 }
+/* disables blue color outline for texarea when user clicks on textarea */
 textarea:focus {
     outline: none;
 }
@@ -91,3 +98,4 @@ h3 {
     background-color: white;
     padding: 20px;
 }
+/* css for comment box ends here */

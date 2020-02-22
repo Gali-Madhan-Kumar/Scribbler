@@ -1,9 +1,12 @@
+/* openpost method takes postId as parameter and stores username,posttile and postcontent inside session storage,
+ and redirects to post.html page. when user clicks on ellipsis icon of post inside postlist page */
 function openpost(postId) {
 	sessionStorage.setItem('userName', document.getElementById(postId.id).getElementsByTagName('p')[0].innerHTML);
 	sessionStorage.setItem('postTitle', document.getElementById(postId.id).getElementsByTagName('p')[1].innerHTML);
 	sessionStorage.setItem('postContent', document.getElementById(postId.id).getElementsByTagName('p')[2].innerHTML);
 	window.location.href = './post.html';
 }
+//if post.html page is loaded then only the below if condition executes, displays username,posttitle and postcontent of post.
 if (document.getElementById('post') != null) {
 	var userName = sessionStorage.getItem('userName');
 	var postTitle = sessionStorage.getItem('postTitle');
@@ -23,6 +26,7 @@ if (document.getElementById('post') != null) {
 		'</div>' +
 		'<p id="totalLikes">Be the first one to like this!</p>';
 }
+//edit button changes to save button and save button changes to edit button once user edited and saved the post
 document.getElementsByTagName('span')[0].addEventListener("click", function () {
 	if (document.getElementsByTagName('span')[0].id == 'editpost') {
 		document.getElementById('postTitle').style = 'border: 1px solid red';
@@ -40,6 +44,7 @@ document.getElementsByTagName('span')[0].addEventListener("click", function () {
 		document.getElementsByTagName('span')[0].innerHTML = 'Edit <i class="fa fa-edit"></i></span>';
 	}
 });
+//like button code starts here
 var likes = 0;
 function like() {
 	likes += 1;
@@ -51,6 +56,9 @@ function like() {
 	}
 	document.getElementsByClassName('fa-thumbs-up')[0].innerHTML = ' Liked';
 }
+//like button code ends here
+
+//comments are displayed in reverse order(last one as first)
 function addComment() {
 	var comment = document.getElementsByTagName('textarea')[0].value;
 	document.getElementById('allcomments').innerHTML = '<p>' + comment + '</p>' + document.getElementById('allcomments').innerHTML;
