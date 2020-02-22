@@ -1,3 +1,4 @@
+//createpostModal method creates createpost modal dynamically using javascript
 function createpostModal(modalId) {
     document.getElementById(modalId).style.display = 'flex';
     if (modalId === 'createpost_modal') {
@@ -19,7 +20,7 @@ function createpostModal(modalId) {
         document.getElementById(modalId).innerHTML = template;
     }
 }
-
+//when user clicks on allposts button inside homepage it will redirects to postslist page
 function allPosts() {
     window.location.href = './html/postslist.html';
 }

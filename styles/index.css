@@ -1,3 +1,4 @@
+/* css code that adds background image to homepage */
 body {
     margin: 0px;
     background-image: url("../images/background.jpg");
@@ -5,6 +6,7 @@ body {
     background-size: cover;
     background-attachment: fixed;
 }
+/* css code for middle buttons inside home page starts here */
 .middle_btns {
     width: auto;
     height: 100px;
@@ -25,6 +27,8 @@ body {
     background-color: yellow;
     cursor: pointer;
 }
+/* css code for middle buttons inside home page ends here */
+/* css code for create post modal starts here */
 #createpost_modal {
     justify-content: center;
     align-items: center;
@@ -50,3 +54,4 @@ form textarea {
     color: white;
     cursor: pointer;
 }
+/* css code for create post modal ends here */

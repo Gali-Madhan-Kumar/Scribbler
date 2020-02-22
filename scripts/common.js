@@ -1,3 +1,4 @@
+//modal method takes modalId as parameter and creates modal based on modalId for both signup and signin
 function modal(modalId) {
     if (modalId === 'signup_modal') {
         document.getElementById(modalId).style.display = 'flex';
@@ -48,6 +49,7 @@ function modal(modalId) {
     }
 }
 
+//disables the modal when user clicks on &times; icon inside modal
 function closeModal(modalName) {
     document.getElementById(modalName.id).style.display = 'none';
 }

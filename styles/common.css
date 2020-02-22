@@ -1,3 +1,4 @@
+/* css code for common header starts here */
 #header {
     display: flex;
 }
@@ -41,12 +42,15 @@
     width: 100px;
     cursor: pointer;
 }
+/* disables the blue color outline of button when user clicks on it */
 button:focus {
     outline: none;
 }
 button {
     border: none;
 }
+/* css code for common header ends here */
+/* css code for signup and signin modals starts here */
 .modal {
     display: none;
     position: fixed;
@@ -127,3 +131,4 @@ form p {
     color: white;
     cursor: pointer;
 }
+/* css code for signup and signin modals ends here */
