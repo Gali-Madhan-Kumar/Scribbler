@@ -2,6 +2,7 @@ body {
     background-color: #ffeedd;
     margin: 0px;
 }
+/* css code for displaying posts as post card starts here */
 .postslist {
     display: flex;
     flex-wrap: wrap;
@@ -16,6 +17,7 @@ body {
 .postcard:hover {
     box-shadow: 20px 20px 10px rgb(129, 129, 129);
 }
+/* css code for username */
 .username {
     background-color: white;
     width: auto;
@@ -28,6 +30,7 @@ body {
     font-family: 'Fjalla One', sans-serif;
     text-align: center;
 }
+/* css code for post details */
 .postdetails {
     display: flex;
     flex-direction: column;
@@ -39,6 +42,7 @@ body {
 .post_header {
     display: flex;
 }
+/* css code for post title */
 .post_title {
     flex: 1;
     margin: 0px;
@@ -47,11 +51,13 @@ body {
     font-size: 1.3em;
     font-family: 'Rakkas', cursive;
 }
+/* css code for trash icon */
 .fa-trash {
     padding: 10px;
     margin: 5px;
     cursor: pointer;
 }
+/* css code for post content */
 .post_content {
     max-height: 4.0em;
     overflow: hidden;
@@ -61,12 +67,15 @@ body {
     font-family: 'Muli', sans-serif;
     font-weight: lighter;
 }
+/* css code for ellipsis icon */
 .fa-ellipsis-h {
     float: right;
     padding: 10px;
     cursor: pointer;
     margin: 5px;
 }
+/* css code for displaying posts as post card ends here */
+/* css code for delete post modal starts here */
 .modal_content {
     background-color: #fefefe;
     margin: auto;
@@ -79,6 +88,7 @@ body {
     margin: 0px;
     font-size: 1.2em;
 }
+/* css code for yes button inside deletepost modal */
 #yes_btn {
     width: 80px;
     padding: 10px;
@@ -87,6 +97,7 @@ body {
     background-color: green;
     border: 0px;
 }
+/* css code for no button inside deletepost modal */
 #no_btn {
     width: 80px;
     padding: 10px;
@@ -96,3 +107,4 @@ body {
     background-color: red;
     border: 0px;
 }
+/* css code for delete post modal ends here */

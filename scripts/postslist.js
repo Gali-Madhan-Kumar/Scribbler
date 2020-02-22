@@ -1,3 +1,4 @@
+//stored the 5 posts details inside postsList array 
 var postsList = [{
     user_name: "Srishti Gupta",
     post_title: "‘let’ me be a ‘const’(ant), not a ‘var’(iable)!",
@@ -25,7 +26,7 @@ var postsList = [{
 }
 ];
 
-
+//showposts function displays all the posts inside postlist div dynamically using javascript
 function showposts(postsList) {
     postsList.forEach(function (value, index) {
         var post_Id = 'postcard_' + (index + 1);
@@ -50,7 +51,7 @@ function showposts(postsList) {
     });
 }
 showposts(postsList);
-
+//deletemodal method takes two parameters modalName and postId, postId is used for deleting the perticular post when user clicks on yes button inside delete modal
 function deletemodal(modalName, postId) {
     document.getElementById(modalName.id).style.display = 'flex';
     var template = '<div class="modal_content">' +
@@ -62,7 +63,7 @@ function deletemodal(modalName, postId) {
         '</div>'
     document.getElementById(modalName.id).innerHTML = template;
 }
-
+//deltepost method deletes the post by setting display to none
 function deletepost(modalId, postId) {
     document.getElementById(postId.id).style.display = 'none';
     document.getElementById(modalId.id).style.display = 'none';
