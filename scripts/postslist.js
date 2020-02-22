@@ -43,7 +43,7 @@ function showposts(postsList) {
             '</div>' +
             '<p class="post_content">' + value.post_content + '</p>' +
             '<span>' +
-            '<i class="fa fa-ellipsis-h" onclick="openpost('+ post_Id +')" aria-hidden="true"></i>' +
+            '<i class="fa fa-ellipsis-h" onclick="openpost(' + post_Id + ')" aria-hidden="true"></i>' +
             '</span>' +
             '</div>' +
             '</div>'

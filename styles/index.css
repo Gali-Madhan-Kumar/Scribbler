@@ -1,18 +1,18 @@
 /* css code that adds background image to homepage */
 body {
     margin: 0px;
-    background-image: url("../images/background.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    background-image: url("../images/background.jpg"); /* background image */
+    background-repeat: no-repeat; /* no repeat */
+    background-size: cover; /* covers the whole screen */
+    background-attachment: fixed; /* Stay in place */
 }
 /* css code for middle buttons inside home page starts here */
 .middle_btns {
-    width: auto;
+    width: auto; /* automatically adjusts the widht */
     height: 100px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: center; /* centers vertically */
+    justify-content: center; /* centers horizontally */
     margin: auto;
     position: absolute;
     top: 0;
@@ -45,6 +45,7 @@ form textarea {
     background-color: rgb(232, 232, 232);
     border: 0px;
 }
+/*Create post modal submit button*/
 .createpost_submit_btn {
     text-align: center;
     margin: 20px auto;

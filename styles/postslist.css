@@ -15,9 +15,10 @@ body {
     border-radius: 20px;
 }
 .postcard:hover {
-    box-shadow: 20px 20px 10px rgb(129, 129, 129);
+    box-shadow: 20px 20px 10px rgb(129, 129, 129); /* displays box shadow on hover on post */
 }
 /* css code for username */
+/* username inside post card */
 .username {
     background-color: white;
     width: auto;
@@ -76,6 +77,7 @@ body {
 }
 /* css code for displaying posts as post card ends here */
 /* css code for delete post modal starts here */
+/* Modal Content */
 .modal_content {
     background-color: #fefefe;
     margin: auto;
@@ -83,6 +85,7 @@ body {
     display: flex;
     flex-direction: column;
 }
+/* Modal Body */
 .modal_body p {
     padding: 20px;
     margin: 0px;
@@ -96,6 +99,7 @@ body {
     color: white;
     background-color: green;
     border: 0px;
+    cursor: pointer;
 }
 /* css code for no button inside deletepost modal */
 #no_btn {
@@ -106,5 +110,6 @@ body {
     color: white;
     background-color: red;
     border: 0px;
+    cursor: pointer;
 }
 /* css code for delete post modal ends here */
