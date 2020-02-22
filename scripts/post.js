@@ -61,6 +61,8 @@ function like() {
 //comments are displayed in reverse order(last one as first)
 function addComment() {
 	var comment = document.getElementsByTagName('textarea')[0].value;
-	document.getElementById('allcomments').innerHTML = '<p>' + comment + '</p>' + document.getElementById('allcomments').innerHTML;
-	document.getElementsByTagName('textarea')[0].value = '';
+	if (comment != '') {
+		document.getElementById('allcomments').innerHTML = '<p>' + comment + '</p>' + document.getElementById('allcomments').innerHTML;
+		document.getElementsByTagName('textarea')[0].value = '';
+	}
 }
