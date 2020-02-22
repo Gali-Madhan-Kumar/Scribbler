@@ -37,4 +37,19 @@ span {
 }
 [contenteditable] {
     outline: 0px solid transparent;
-  }
+}
+#likepost {
+    margin: 20px;
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+}
+#likepost span {
+    float: left;
+}
+.fa-thumbs-up {
+    font-weight: bold;
+}
+#likepost p {
+    color: #9B9A94;
+}

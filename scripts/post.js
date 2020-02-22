@@ -18,6 +18,10 @@ if (document.getElementById('post') != null) {
 		'</div>' +
 		'<div id="postContent">' + postContent + '</div>'
 	document.getElementById('post').innerHTML = template;
+	document.getElementById('likepost').innerHTML = '<div id="like_btn">' +
+		'<span id="like_icon" onclick="like()"><i class="fa fa-thumbs-up"> Like</i></span>' +
+		'</div>' +
+		'<p id="totalLikes">Be the first one to like this!</p>';
 }
 document.getElementsByTagName('span')[0].addEventListener("click", function () {
 	if (document.getElementsByTagName('span')[0].id == 'editpost') {
@@ -36,3 +40,14 @@ document.getElementsByTagName('span')[0].addEventListener("click", function () {
 		document.getElementsByTagName('span')[0].innerHTML = 'Edit <i class="fa fa-edit"></i></span>';
 	}
 });
+var likes = 0;
+function like() {
+	likes += 1;
+	if (likes == 1) {
+		document.getElementById('totalLikes').innerHTML = likes + ' person likes this!';
+	}
+	if (likes > 1) {
+		document.getElementById('totalLikes').innerHTML = likes + ' people likes this!';
+	}
+	document.getElementsByClassName('fa-thumbs-up')[0].innerHTML = ' Liked';
+}
